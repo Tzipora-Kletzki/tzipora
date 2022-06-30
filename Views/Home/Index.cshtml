@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div id="preloader">Loading...</div>
+
+<table id="tableToProp">
+</table>
+<input id="word" />
+<button onclick="Search()">Search</button>
+<div class="ui-widget">
+    <label for="nodes">Tags: </label>
+    <select id="nodes">
+    </select>
+</div>
+
+<button onclick="draw()">draw</button>
+<div class="slidecontainer">
+    <input type="range" min="0" max="5" value="5" class="slider" id="slider">
+    Max Weight: <span id="sliderValueDisplay">5</span>
+</div>
+<div id="mynetwork"></div>
+
